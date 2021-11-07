@@ -1,0 +1,73 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    width: 80vw;
+}
+
+.ContainerTitle {
+    margin-top:  75px;
+    font-size: 35px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.Image {
+    height: 25vh;
+    width: 30vw;   
+}
+
+.Title {
+    font-size: 16px;
+    color: palevioletred;
+}
+
+.Price {
+    font-weight: 600;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px;
+   width: 65vw;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+@media (min-width: 1024px) {
+    .Container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Image {
+        height: 30vh;
+        width: 10vw;   
+    }
+
+    .btn-grad {
+        width: 13vw;
+    }
+}
